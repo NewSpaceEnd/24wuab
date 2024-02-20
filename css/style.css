@@ -1,26 +1,27 @@
 body{
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+/*
+---------------------------------------------
+Fönster mindre än gränsen
+*/
+
+@media screen and (max-width: 769px) {
 
 #container{
     display: grid;
     margin: 0px;
-    grid-template-columns: 41vw 100vw;
-    grid-template-rows: 10vh 20vh 20vh 35vh 15vh;
+    grid-template-columns: 41vw 59vw;
+    grid-template-rows: 20vh 30vh 35vh 15vh;
     grid-template-areas: 
-    'nav nav'
     'header header'
     'aside1 aside2'
     'main main'
     'footer footer'
 }
 
-nav{
-    
-  grid-area: nav;
-  background-color: blue;
-}
+
 
 header{
     grid-area: header;
@@ -35,7 +36,6 @@ aside1{
 aside2{
     grid-area: aside2;
     background-color: brown;
-    
 }
 
 main{
@@ -52,3 +52,132 @@ img{
     width: 100%;
 }
 
+.godisdjurcom_text{
+    height: 100%;
+    width: 100%;
+}
+
+}
+/*
+Fönster mindre än gränsen
+----------------------------------------------
+Fönster större än gränsen
+*/
+
+@media screen and (min-width: 769px) {
+
+    #container{
+        display: grid;
+        margin: 0px;
+        grid-template-columns: 41vw 59vw;
+        grid-template-rows: 20vh 30vh 35vh 15vh;
+        grid-template-areas: 
+        'nav nav'
+        'header header'
+        'aside1 aside2'
+        'main main'
+        'footer footer'
+    }
+    
+    
+    header{
+        grid-area: header;
+        background-color: beige;
+    }
+    
+    aside1{
+        grid-area: aside1;
+        background-color: blueviolet;
+    }
+    
+    aside2{
+        grid-area: aside2;
+        background-color: brown;
+    }
+    
+    main{
+        grid-area: main;
+        background-color: aqua;
+    }
+    
+    footer{
+        grid-area: footer;
+        background-color: chartreuse;
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    .godisdjurcom_text{
+        height: 100%;
+        width: 100%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .fade-layer.visible{
+        display: none;
+    }
+
+}
+
+/*
+Fönster större än gränsen
+---------------------------------------------
+Annan kod
+*/ 
+
+h1{
+    font-size: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.menu{
+    height: 100vh;
+    width: 25vw;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button span{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
