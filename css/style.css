@@ -5,6 +5,7 @@ body{
 /*
 ---------------------------------------------
 Fönster mindre än gränsen
+Mobil
 */
 
 @media screen and (max-width: 769px) {
@@ -30,7 +31,7 @@ header{
 
 aside1{
     grid-area: aside1;
-    background-color: blueviolet;
+    background-color: rgb(248,244,244)
 }
 
 aside2{
@@ -60,8 +61,10 @@ img{
 }
 /*
 Fönster mindre än gränsen
+Mobil
 ----------------------------------------------
 Fönster större än gränsen
+Desktop
 */
 
 @media screen and (min-width: 769px) {
@@ -126,8 +129,10 @@ Fönster större än gränsen
 
 /*
 Fönster större än gränsen
+Desktop
 ---------------------------------------------
 Annan kod
+Både Mobil och Desktop
 */ 
 
 h1{
