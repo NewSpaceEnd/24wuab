@@ -186,3 +186,43 @@ h3{
 .fade-layer.visible{
     display: block;
 }
+
+/*
+-----------------------------------------------------------------------
+Frukt Sidan 
+*/
+
+#fruitcontainer{
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 20vh 65vh 15vh;
+    grid-template-areas: 
+    'header header'
+    'main aside'
+    'footer footer'
+}
+
+#fruitcontainer img{
+    height: 55%;
+    width: 55%;
+    margin-left: 20%;
+}
+
+.banan_text{
+    margin: auto;
+}
+
+.jordgubb_text{
+    margin-top: 25%;
+}
+
+.plommon_text{
+    margin-top: 25%;
+}
+
+.truck{
+    width: 25%;
+    margin-left: 38%;
+}
+
