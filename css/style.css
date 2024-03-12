@@ -73,9 +73,8 @@ Desktop
         display: grid;
         margin: 0px;
         grid-template-columns: 41vw 59vw;
-        grid-template-rows: 20vh 30vh 35vh 15vh;
+        grid-template-rows: 20vh 50vh 35vh 15vh;
         grid-template-areas: 
-        'nav nav'
         'header header'
         'aside1 aside2'
         'main main'
@@ -192,7 +191,8 @@ h3{
 Frukt Sidan 
 */
 
-#fruitcontainer{
+@media screen and (max-width: 769px) {
+    #fruitcontainer{
     display: grid;
     margin: 0px;
     grid-template-columns: 50vw 50vw;
@@ -201,28 +201,113 @@ Frukt Sidan
     'header header'
     'main aside'
     'footer footer'
-}
+    }
 
-#fruitcontainer img{
+    #fruitcontainer img{
     height: 55%;
+
     width: 55%;
     margin-left: 20%;
-}
+    }
 
-.banan_text{
+    .banan_text{
     margin: auto;
-}
+    }
 
-.jordgubb_text{
+    .jordgubb_text{
     margin-top: 25%;
-}
+    }
 
-.plommon_text{
+    .plommon_text{
     margin-top: 25%;
-}
+    }
 
-.truck{
+
+    .truck{
     width: 25%;
     margin-left: 38%;
+    }
 }
 
+/*
+Frukt sidan
+-----------------------------------------------------------------------
+Djur sidan
+*/
+
+@media screen and (max-width: 769px) {
+
+    #animalcontainer{
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 100vw;
+    grid-template-rows: 20vh 70vh 20vh;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer'
+    }
+
+    .animal_rows{
+    text-align: center;
+    }
+
+    .animal_first_row{
+    width: 200px;
+    margin: 10px;
+    justify-content: space-around;
+    display: inline-block;
+        }
+
+    .animal_second_row{
+    width: 200px;
+    margin: 10px;
+    justify-content: right;
+    display: inline-block;
+    }
+
+    .animal_third_row{
+    width: 200px;
+    margin: 10px;
+    justify-content: right;
+    display: inline-block;
+    }
+}
+
+/*
+---------------------------------------------------------------
+Animal Special
+*/
+
+@media screen and (max-width: 769px) {
+
+    #animalspecial{
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 20vh 50vh 10vh 20vh;
+    grid-template-areas: 
+    'header'
+    'main'
+    'aside'
+    'footer'
+    }
+
+    aside{
+    grid-area: aside;
+    background-color: blueviolet;
+    }
+
+    .h2special{
+    font-size: smaller;
+    }
+
+    .avforing{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    }
+}   

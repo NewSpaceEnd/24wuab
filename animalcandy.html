@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Godisdjur.com/animal-candy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <h1>ANIMAL CANDY</h1>
+    <nav class="menu">
+        <ul>
+          <li><a href="index.html">Start Sidan</a></li>
+          <li><a href="animalcandy.html">Djur Godis</a></li>
+
+          <li><a href="fruitcandy.html">Frukt Godis</a></li>
+          <li><a href="specialcandy.html">Specielt Godis</a></li>
+          <li>Annat</li>
+          <li>Copyright bulle AB</li>
+        </ul>
+      </nav>
+    
+    <div class="fade-layer"></div>
+    <div id="animalcontainer">
+        <header>
+            <div class="menu-button" onclick="showMenu()">
+                <span class="material-symbols-outlined">
+                  menu
+                </span>
+              </div>
+            <h1>Välkommen till vårt djungeläventyr av sötsaker! Utforska vårt magiska sortiment av godis formade som gulliga djur.
+                Varje bit är en smakfull resa till en fantasifull värld utan dess like!
+            </h1>
+        </header>
+        <main>
+            <div class="animal_rows">
+                <div class="animal_first_row">
+                  <img src="img/bears_placeholder.webp" alt="">
+                  <img src="img/dino_placeholder.png" alt="">
+                   <img src="img/ducks_placeholder.png" alt="">
+                </div>
+                <div class="animal_second_row">
+                    <img src="img/ducks_placeholder.png" alt="">
+                    <img src="img/bears_placeholder.webp" alt="">
+                    <img src="img/dino_placeholder.png" alt="">
+                </div>
+                <div class="animal_third_row">
+                    <img src="img/dino_placeholder.png" alt="">
+                    <img src="img/bears_placeholder.webp" alt="">
+                    <img src="img/ducks_placeholder.png" alt="">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3>Vi jobbar ständigt på att få in mer olika frukter!</h3>
+            <div class="truck">
+                <img src="img/truck.png" alt="">
+            </div>
+        </footer>
+
+
+
+        <script src="js/main.js"></script>
 </body>
 </html>
