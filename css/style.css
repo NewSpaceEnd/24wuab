@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 body{
     margin: 0;
     overflow-x: hidden;
@@ -14,7 +17,7 @@ Mobil
     display: grid;
     margin: 0px;
     grid-template-columns: 41vw 59vw;
-    grid-template-rows: 20vh 30vh 35vh 15vh;
+    grid-template-rows: 28vh 30vh 35vh 15vh;
     grid-template-areas: 
     'header header'
     'aside1 aside2'
@@ -27,6 +30,7 @@ Mobil
 header{
     grid-area: header;
     background-color: beige;
+    font-family: "Open Sans", sans-serif;
 }
 
 aside1{
@@ -37,6 +41,7 @@ aside1{
 aside2{
     grid-area: aside2;
     background-color: brown;
+    font-family: "Open Sans", sans-serif;
 }
 
 main{
@@ -47,6 +52,7 @@ main{
 footer{
     grid-area: footer;
     background-color: chartreuse;
+    font-family: "Open Sans", sans-serif;
 }
 
 img{
@@ -135,7 +141,7 @@ Både Mobil och Desktop
 */ 
 
 h1{
-    font-size: 100%;
+    font-size: 85%;
 }
 
 h2{
@@ -148,7 +154,7 @@ h3{
 
 .menu{
     height: 100vh;
-    width: 25vw;
+    width: 35vw;
     background-color: red;
     position: fixed;
     top: 0;
@@ -195,7 +201,7 @@ Frukt Sidan
     #fruitcontainer{
     display: grid;
     margin: 0px;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 35vw 65vw;
     grid-template-rows: 20vh 65vh 15vh;
     grid-template-areas: 
     'header header'
@@ -222,10 +228,27 @@ Frukt Sidan
     margin-top: 25%;
     }
 
-
     .truck{
     width: 25%;
     margin-left: 38%;
+    }
+
+    .fruitheadertext{
+        width: 95vw;
+    }
+
+    .fruittext{
+        width: 60vw;
+    }
+
+    .fruitpictures{
+        justify-content: left;
+        margin-top: 8vh;
+        height: 25vh;
+    }
+
+    .fruitmargins{
+        margin-top: 7vh;
     }
 }
 
@@ -241,10 +264,11 @@ Djur sidan
     display: grid;
     margin: 0px;
     grid-template-columns: 100vw;
-    grid-template-rows: 20vh 70vh 20vh;
+    grid-template-rows: 20vh 45vh 15vh 20vh;
     grid-template-areas:
     'header'
     'main'
+    'aside'
     'footer'
     }
 
@@ -253,24 +277,28 @@ Djur sidan
     }
 
     .animal_first_row{
-    width: 200px;
+    width: 115px;
     margin: 10px;
     justify-content: space-around;
     display: inline-block;
         }
 
     .animal_second_row{
-    width: 200px;
+    width: 115px;
     margin: 10px;
     justify-content: right;
     display: inline-block;
     }
 
     .animal_third_row{
-    width: 200px;
+    width: 115px;
     margin: 10px;
     justify-content: right;
     display: inline-block;
+    }
+
+    p{
+        font-size: 120%;
     }
 }
 
@@ -285,7 +313,7 @@ Animal Special
     display: grid;
     margin: 0px;
     grid-template-columns: 100%;
-    grid-template-rows: 20vh 50vh 10vh 20vh;
+    grid-template-rows: 28vh 50vh 15vh 20vh;
     grid-template-areas: 
     'header'
     'main'
