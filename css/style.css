@@ -11,7 +11,7 @@ Fönster mindre än gränsen
 Mobil
 */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 500px) {
 
 #container{
     display: grid;
@@ -40,13 +40,13 @@ aside1{
 
 aside2{
     grid-area: aside2;
-    background-color: brown;
+    background-color: rgb(248,244,244);
     font-family: "Open Sans", sans-serif;
 }
 
 main{
     grid-area: main;
-    background-color: aqua;
+    background-color: rgb(248,244,244);
 }
 
 footer{
@@ -64,6 +64,8 @@ img{
     width: 100%;
 }
 
+
+
 }
 /*
 Fönster mindre än gränsen
@@ -73,7 +75,7 @@ Fönster större än gränsen
 Desktop
 */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 500px) {
 
     #container{
         display: grid;
@@ -95,7 +97,7 @@ Desktop
     
     aside1{
         grid-area: aside1;
-        background-color: blueviolet;
+        background-color: rgb(248,244,244);;
     }
     
     aside2{
@@ -105,7 +107,7 @@ Desktop
     
     main{
         grid-area: main;
-        background-color: aqua;
+        background-color: rgb(248,244,244);;
     }
     
     footer{
@@ -122,14 +124,10 @@ Desktop
         width: 100%;
     }
 
-    nav{
-        display: none;
-    }
-
     .fade-layer.visible{
         display: none;
     }
-
+    
 }
 
 /*
@@ -151,6 +149,8 @@ h2{
 h3{
     text-align: center;
 }
+
+
 
 .menu{
     height: 100vh;
@@ -192,12 +192,13 @@ h3{
     display: block;
 }
 
+
 /*
 -----------------------------------------------------------------------
 Frukt Sidan 
 */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 500px) {
     #fruitcontainer{
     display: grid;
     margin: 0px;
@@ -239,6 +240,7 @@ Frukt Sidan
 
     .fruittext{
         width: 60vw;
+        color: rgb(248,244,244);
     }
 
     .fruitpictures{
@@ -252,19 +254,80 @@ Frukt Sidan
     }
 }
 
+@media screen and (min-width: 500px) {
+
+    #fruitcontainer{
+        display: grid;
+        margin: 0px;
+        grid-template-columns: 35vw 65vw;
+        grid-template-rows: 15vh 80vh 25vh;
+        grid-template-areas: 
+        'header header'
+        'main aside'
+        'footer footer'
+        }
+
+        aside{
+            background-color: blueviolet;
+        }
+    
+        #fruitcontainer img{
+        height: 55%;
+    
+        width: 55%;
+        margin-left: 20%;
+        }
+    
+        .banan_text{
+        margin: auto;
+        }
+    
+        .jordgubb_text{
+        margin-top: 25%;
+        }
+    
+        .plommon_text{
+        margin-top: 25%;
+        }
+    
+        .truck{
+        width: 25%;
+        margin-left: 38%;
+        }
+    
+        .fruitheadertext{
+            width: 95vw;
+        }
+    
+        .fruittext{
+            width: 60vw;
+            color: rgb(248,244,244);
+        }
+    
+        .fruitpictures{
+            justify-content: left;
+            margin-top: 8vh;
+            height: 35vh;
+        }
+    
+        .fruitmargins{
+            margin-top: 7vh;
+        }
+}
+
 /*
 Frukt sidan
 -----------------------------------------------------------------------
 Djur sidan
 */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 500px) {
 
     #animalcontainer{
     display: grid;
     margin: 0px;
     grid-template-columns: 100vw;
-    grid-template-rows: 20vh 45vh 15vh 20vh;
+    grid-template-rows: 20vh 45vh 20vh 20vh;
     grid-template-areas:
     'header'
     'main'
@@ -277,21 +340,21 @@ Djur sidan
     }
 
     .animal_first_row{
-    width: 115px;
+    width: 100px;
     margin: 10px;
     justify-content: space-around;
     display: inline-block;
         }
 
     .animal_second_row{
-    width: 115px;
+    width: 100px;
     margin: 10px;
     justify-content: right;
     display: inline-block;
     }
 
     .animal_third_row{
-    width: 115px;
+    width: 100px;
     margin: 10px;
     justify-content: right;
     display: inline-block;
@@ -299,7 +362,56 @@ Djur sidan
 
     p{
         font-size: 120%;
+        color: rgb(248,244,244);
     }
+}
+
+@media screen and (min-width: 500px){
+    
+    #animalcontainer{
+        display: grid;
+        margin: 0px;
+        grid-template-columns: 100vw;
+        grid-template-rows: 12vh 45vh 0vh 43vh;
+        grid-template-areas:
+        'header'
+        'main'
+        'aside'
+        'footer'
+        }
+    
+        .animal_rows{
+        text-align: center;
+        }
+    
+        .animal_first_row{
+        width: 115px;
+        margin: 10px;
+        justify-content: space-around;
+        display: inline-block;
+            }
+    
+        .animal_second_row{
+        width: 115px;
+        margin: 10px;
+        justify-content: right;
+        display: inline-block;
+        }
+    
+        .animal_third_row{
+        width: 115px;
+        margin: 10px;
+        justify-content: right;
+        display: inline-block;
+        }
+
+        aside{
+            display: none;
+        }
+    
+        p{
+            font-size: 120%;
+        }
 }
 
 /*
@@ -307,18 +419,22 @@ Djur sidan
 Animal Special
 */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 500px) {
 
     #animalspecial{
     display: grid;
     margin: 0px;
     grid-template-columns: 100%;
-    grid-template-rows: 28vh 50vh 15vh 20vh;
+    grid-template-rows: 28vh 50vh 20vh 20vh;
     grid-template-areas: 
     'header'
     'main'
     'aside'
     'footer'
+    }
+
+    main{
+        background-color: rgb(44,44,44)
     }
 
     aside{
@@ -328,6 +444,7 @@ Animal Special
 
     .h2special{
     font-size: smaller;
+    color: rgb(248,244,244);
     }
 
     .avforing{
@@ -338,4 +455,52 @@ Animal Special
     left: 10%;
     top: 10%;
     }
+
+    h2{
+        font-size: 80%;
+    }
 }   
+
+@media screen and (min-width: 500px) {
+
+    #animalspecial{
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 18vh 50vh 0vh 32vh;
+    grid-template-areas: 
+    'header'
+    'main'
+    'aside'
+    'footer'
+    }
+
+    main{
+        background-color: rgb(44,44,44)
+    }
+
+    aside{
+    display: none;
+    grid-area: aside;
+    background-color: blueviolet;
+    }
+
+    .h2special{
+    font-size: smaller;
+    color: rgb(248,244,244);
+    }
+
+    .avforing{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    }
+
+    h2{
+        font-size: 90%;
+    }
+}   
+
