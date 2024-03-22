@@ -81,7 +81,7 @@ Desktop
         display: grid;
         margin: 0px;
         grid-template-columns: 41vw 59vw;
-        grid-template-rows: 20vh 50vh 35vh 15vh;
+        grid-template-rows: 20vh 50vh 50vh 15vh;
         grid-template-areas: 
         'header header'
         'aside1 aside2'
@@ -103,6 +103,8 @@ Desktop
     aside2{
         grid-area: aside2;
         background-color: brown;
+        font-family: "Open Sans", sans-serif;
+        font-size: 250%;
     }
     
     main{
@@ -112,6 +114,7 @@ Desktop
     
     footer{
         grid-area: footer;
+        font-family: "Open Sans", sans-serif;
         background-color: chartreuse;
     }
     
@@ -127,7 +130,11 @@ Desktop
     .fade-layer.visible{
         display: none;
     }
-    
+
+    h1{
+        font-family: "Open Sans", sans-serif;
+        font-size: larger;
+    }    
 }
 
 /*
@@ -138,15 +145,15 @@ Annan kod
 Både Mobil och Desktop
 */ 
 
-h1{
-    font-size: 85%;
-}
+
 
 h2{
+    font-family: "Open Sans", sans-serif;
     text-align: center;
 }
 
 h3{
+    font-family: "Open Sans", sans-serif;
     text-align: center;
 }
 
@@ -218,14 +225,17 @@ Frukt Sidan
     }
 
     .banan_text{
+    font-family: "Open Sans", sans-serif;
     margin: auto;
     }
 
     .jordgubb_text{
+    font-family: "Open Sans", sans-serif;
     margin-top: 25%;
     }
 
     .plommon_text{
+    font-family: "Open Sans", sans-serif;
     margin-top: 25%;
     }
 
@@ -235,10 +245,12 @@ Frukt Sidan
     }
 
     .fruitheadertext{
+        font-family: "Open Sans", sans-serif;
         width: 95vw;
     }
 
     .fruittext{
+        font-family: "Open Sans", sans-serif;
         width: 60vw;
         color: rgb(248,244,244);
     }
@@ -268,6 +280,7 @@ Frukt Sidan
         }
 
         aside{
+            font-family: "Open Sans", sans-serif;
             background-color: blueviolet;
         }
     
@@ -279,14 +292,17 @@ Frukt Sidan
         }
     
         .banan_text{
+        font-family: "Open Sans", sans-serif;
         margin: auto;
         }
     
         .jordgubb_text{
+        font-family: "Open Sans", sans-serif;
         margin-top: 25%;
         }
     
         .plommon_text{
+        font-family: "Open Sans", sans-serif;
         margin-top: 25%;
         }
     
@@ -296,10 +312,12 @@ Frukt Sidan
         }
     
         .fruitheadertext{
+            font-family: "Open Sans", sans-serif;
             width: 95vw;
         }
     
         .fruittext{
+            font-family: "Open Sans", sans-serif;
             width: 60vw;
             color: rgb(248,244,244);
         }
@@ -335,6 +353,11 @@ Djur sidan
     'footer'
     }
 
+    h1{
+        font-family: "Open Sans", sans-serif;
+        font-size: 100%;
+    }
+
     .animal_rows{
     text-align: center;
     }
@@ -361,6 +384,7 @@ Djur sidan
     }
 
     p{
+        font-family: "Open Sans", sans-serif;
         font-size: 120%;
         color: rgb(248,244,244);
     }
@@ -405,11 +429,8 @@ Djur sidan
         display: inline-block;
         }
 
-        aside{
-            display: none;
-        }
-    
         p{
+            font-family: "Open Sans", sans-serif;
             font-size: 120%;
         }
 }
@@ -439,10 +460,12 @@ Animal Special
 
     aside{
     grid-area: aside;
+    font-family: "Open Sans", sans-serif;
     background-color: blueviolet;
     }
 
     .h2special{
+    font-family: "Open Sans", sans-serif;
     font-size: smaller;
     color: rgb(248,244,244);
     }
@@ -480,12 +503,17 @@ Animal Special
     }
 
     aside{
-    display: none;
+    font-family: "Open Sans", sans-serif;
     grid-area: aside;
     background-color: blueviolet;
     }
 
+    h1{
+        font-size: 80%;
+    }
+
     .h2special{
+    font-family: "Open Sans", sans-serif;
     font-size: smaller;
     color: rgb(248,244,244);
     }
