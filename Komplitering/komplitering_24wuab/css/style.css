@@ -50,7 +50,7 @@ För Mobil
         display: grid;
         margin: 0px;
         grid-template-columns: 40vw 60vw;
-        grid-template-rows: 20vh 68vh 35vh;
+        grid-template-rows: 20vh 80vh 35vh;
         grid-template-areas: 
         'header header'
         'main aside'
@@ -115,34 +115,37 @@ För Mobil
     }
 
     .bannan-picture {
+        margin-top: 1vh;
         height: 20vh;
         margin-left: 1vw;
     }
 
     .jordgubb-picture {
+        margin-top: 5vh;
         height: 20vh;
         margin-left: 1vw;
     }
 
     .plommon-picture {
+        margin-top: 5vh;
         height: 20vh;
         margin-left: 1vw;
     }
 
     .bannan-text {
-        height: 20vh;
+        height: 25vh;
         text-align: center;
         
         margin-top: 0px;
     }
 
     .jordgubb-text {
-        height: 20vh;
+        height: 25vh;
         text-align: center;
     }
 
     .plommon-text {
-        height: 20vh;
+        height: 25vh;
         text-align: center;
     }
 
