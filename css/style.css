@@ -17,7 +17,7 @@ Mobil
     display: grid;
     margin: 0px;
     grid-template-columns: 41vw 59vw;
-    grid-template-rows: 28vh 30vh 35vh 15vh;
+    grid-template-rows: 28vh 34vh 35vh 15vh;
     grid-template-areas: 
     'header header'
     'aside1 aside2'
