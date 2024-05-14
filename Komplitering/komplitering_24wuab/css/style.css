@@ -282,9 +282,19 @@ För Dator
         font-size: 4vh;
     }
 
+    h3 {
+        font-size: 2vh;
+    }
+
+    li {
+        font-size: 2vh;
+    }
+
     .logo-text {
         text-align: center;
     }
+
+    
 
     #container {
         display: grid;
@@ -324,7 +334,7 @@ För Dator
         display: grid;
         margin: 0px;
         grid-template-columns: 30vw 30vw 40vw;
-        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-rows: 10vh 110vh 10vh;
         grid-template-areas: 
         'header header header'
         'aside main main-pic'
@@ -464,6 +474,7 @@ För Dator
 
     .info-text1 {
         margin-left: 0.4vw;
+        font-size: 2vh;
     }
 
     .country-text {
